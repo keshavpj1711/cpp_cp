@@ -66,3 +66,9 @@ STL is basically a helper library thing now we can implement every function like
   - unique returns a pointer (iterator) to the "logical end" of the new sequence
   - and to find the length, we subtract the first pointer from the end pointer.
 - We then put 0 at the end to mark the end of string
+
+![alt text](image-12.png)
+
+![alt text](image-13.png)
+
+- lower bound basically helps to find the first element in a sorted vector or array, that is atleast equal or more than the value.
