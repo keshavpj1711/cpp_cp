@@ -10,27 +10,27 @@ STL is basically a helper library thing now we can implement every function like
 
 # Slides
 
-![alt text](image.png)
+![alt text](./images/image.png)
 
-![alt text](image-1.png)
+![alt text](./images/image-1.png)
 
-![alt text](image-2.png)
+![alt text](./images/image-2.png)
 
 - **Note** in the above slide we can see that both the arguements passed should be of same data type otherwise compiler throws an error. 
 - Also the datatype or class object should be able to perform those operations in order to not have compilation error, **example:** let say you are trying to compare strings but there's no direct way of comparing strings.
 
-![alt text](image-3.png)
+![alt text](./images/image-3.png)
 
 - Similar to function we can use templates for classes
 
-![alt text](image-4.png)
+![alt text](./images/image-4.png)
 - **Random Access Iterators**: Basically positions or indexes in case of an array.
 - You can see that they are pointers only coz for sorting from a[0] to a[9] we pass in (a, a+10) and this is the way we did pointer arithematic.
 - **Note** r is not included in the sorting.
 
-![alt text](image-5.png)
+![alt text](./images/image-5.png)
 
-![alt text](image-6.png)
+![alt text](./images/image-6.png)
 
 - So basically when using sort we can sort things other than int and float we just need to tell them how to compare things. This is achieved using `operator<` or `comparator` function.
 
@@ -39,26 +39,26 @@ STL is basically a helper library thing now we can implement every function like
   - Inside you define the logic of how and what to compare. 
   - With this we can normally call `sort()` fn
 
-![alt text](image-7.png)
+![alt text](./images/image-7.png)
 
 - Using `cmp()`
   - This can be used when you don't want to modify your struct.
   - In this case we need to pass the comparator fn too as arg in `sort()` fn
   - **KEEP IN MIND** you don't end up using equalities, check BE CAREFUL in slides.
 
-![alt text](image-8.png)
+![alt text](./images/image-8.png)
 
 - Here the function is directly created inside the `sort()` fn.
 
-![alt text](image-9.png)
+![alt text](./images/image-9.png)
 
 - All elements before the n-th element are less than or equal to it and all elements after the n-th element are greater than or equal to it. 
 - This basically works like partition fn.
 - NOTE ELEMENTS ARE NOT FULLY SORTED.
 
-![alt text](image-10.png)
+![alt text](./images/image-10.png)
 
-![alt text](image-11.png)
+![alt text](./images/image-11.png)
 
 - **NOTE** it only removes consecutive rendundant element, so if repeated elements are scattered first sort the elements then apply `unique()`.
 
@@ -67,111 +67,111 @@ STL is basically a helper library thing now we can implement every function like
   - and to find the length, we subtract the first pointer from the end pointer.
 - We then put 0 at the end to mark the end of string
 
-![alt text](image-12.png)
+![alt text](./images/image-12.png)
 
-![alt text](image-13.png)
+![alt text](./images/image-13.png)
 
-![alt text](image-14.png)
+![alt text](./images/image-14.png)
 
-![alt text](image-15.png)
+![alt text](./images/image-15.png)
 
-![alt text](image-16.png)
+![alt text](./images/image-16.png)
 
-![alt text](image-17.png)
+![alt text](./images/image-17.png)
 
-![alt text](image-18.png)
+![alt text](./images/image-18.png)
 
-![alt text](image-19.png)
+![alt text](./images/image-19.png)
 
-![alt text](image-20.png)
+![alt text](./images/image-20.png)
 
-![alt text](image-21.png)
+![alt text](./images/image-21.png)
 
-![alt text](image-22.png)
+![alt text](./images/image-22.png)
 
-![alt text](image-23.png)
+![alt text](./images/image-23.png)
 
-![alt text](image-24.png)
+![alt text](./images/image-24.png)
 
 - The problem in the above code is that the datatype of `a.size()` is unsigned int and when `a.size()` returns 0 subtracting something from unsigned results in a very large number if the the result was to be a negative number. Reason: check properties of unsigned int. 
 
-![alt text](image-25.png)
+![alt text](./images/image-25.png)
 
-![alt text](image-26.png)
+![alt text](./images/image-26.png)
 
-![alt text](image-27.png)
+![alt text](./images/image-27.png)
 
-![alt text](image-28.png)
+![alt text](./images/image-28.png)
 
-![alt text](image-29.png)
+![alt text](./images/image-29.png)
 
-![alt text](image-30.png)
+![alt text](./images/image-30.png)
 
-![alt text](image-31.png)
+![alt text](./images/image-31.png)
 
-![alt text](image-32.png)
+![alt text](./images/image-32.png)
 
-![alt text](image-33.png)
+![alt text](./images/image-33.png)
 
-![alt text](image-34.png)
+![alt text](./images/image-34.png)
 
 - Queue basically follows FIFO(First in First out)
 
-![alt text](image-35.png)
+![alt text](./images/image-35.png)
 
 - Stack follows FILO(First in Last out)
 
-![alt text](image-36.png)
+![alt text](./images/image-36.png)
 
 - Comparision b/w the containers
   - **Random Access[]** - is basically when we try to do `a[i]` to access an element randomly. 
   - **Contiguous Mem** - is basically if the data is stored in the memory continuously or not.
 
-![alt text](image-37.png)
+![alt text](./images/image-37.png)
 
-![alt text](image-38.png)
+![alt text](./images/image-38.png)
 
 - Implements a max heap
 
-![alt text](image-39.png)
+![alt text](./images/image-39.png)
 
 - If you want to implement a min heap, if you put all the elements in negative form the max element would be min in the actual dataset.
 - Other ways of doing this would be:
   - creating a `greater<T>` as a custom comparision func
   - or, `operator<` function
 
-![alt text](image-40.png)
+![alt text](./images/image-40.png)
 
-![alt text](image-41.png)
+![alt text](./images/image-41.png)
 
-![alt text](image-42.png)
+![alt text](./images/image-42.png)
 
 - We can also create sets with custom ordering by defining the `operator<` fn when defining the struct.
 
-![alt text](image-43.png)
+![alt text](./images/image-43.png)
 
 - In sets we can't directly jump from one element to another and if we try doing `it + 5` it will basically do `it++` 5 times.
 
 - So traversing in a set is of order n i.e. O(N). See for `distance(it1, it2)` it's order is O(it2 - it1)
 
-![alt text](image-44.png)
+![alt text](./images/image-44.png)
 
-![alt text](image-45.png)
+![alt text](./images/image-45.png)
 
 - The maps work like dictionaries in python 
 
-![alt text](image-46.png)
+![alt text](./images/image-46.png)
 
 - As we have seen keys can't be changed only their values can be.
 
-![alt text](image-47.png)
+![alt text](./images/image-47.png)
 
-![alt text](image-48.png)
+![alt text](./images/image-48.png)
 
-![alt text](image-49.png)
+![alt text](./images/image-49.png)
 
 - In sets and map basically when erasing assign iterator to a value after it, so you iterator remains valid.
 
-![alt text](image-50.png)
+![alt text](./images/image-50.png)
 
 - Also if you delete the last element then also the iterator becomes invalid, another way it could get invalid is when you change the size.
