@@ -155,3 +155,23 @@ STL is basically a helper library thing now we can implement every function like
 - So traversing in a set is of order n i.e. O(N). See for `distance(it1, it2)` it's order is O(it2 - it1)
 
 ![alt text](image-44.png)
+
+![alt text](image-45.png)
+
+- The maps work like dictionaries in python 
+
+![alt text](image-46.png)
+
+- As we have seen keys can't be changed only their values can be.
+
+![alt text](image-47.png)
+
+![alt text](image-48.png)
+
+![alt text](image-49.png)
+
+- In sets and map basically when erasing assign iterator to a value after it, so you iterator remains valid.
+
+![alt text](image-50.png)
+
+- Also if you delete the last element then also the iterator becomes invalid, another way it could get invalid is when you change the size.
