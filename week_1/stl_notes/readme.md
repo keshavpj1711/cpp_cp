@@ -71,4 +71,14 @@ STL is basically a helper library thing now we can implement every function like
 
 ![alt text](image-13.png)
 
-- lower bound basically helps to find the first element in a sorted vector or array, that is atleast equal or more than the value.
+![alt text](image-14.png)
+
+![alt text](image-15.png)
+
+![alt text](image-16.png)
+
+![alt text](image-17.png)
+
+![alt text](image-18.png)
+
+![alt text](image-19.png)
