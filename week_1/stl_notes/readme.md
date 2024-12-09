@@ -106,3 +106,52 @@ STL is basically a helper library thing now we can implement every function like
 ![alt text](image-29.png)
 
 ![alt text](image-30.png)
+
+![alt text](image-31.png)
+
+![alt text](image-32.png)
+
+![alt text](image-33.png)
+
+![alt text](image-34.png)
+
+- Queue basically follows FIFO(First in First out)
+
+![alt text](image-35.png)
+
+- Stack follows FILO(First in Last out)
+
+![alt text](image-36.png)
+
+- Comparision b/w the containers
+  - **Random Access[]** - is basically when we try to do `a[i]` to access an element randomly. 
+  - **Contiguous Mem** - is basically if the data is stored in the memory continuously or not.
+
+![alt text](image-37.png)
+
+![alt text](image-38.png)
+
+- Implements a max heap
+
+![alt text](image-39.png)
+
+- If you want to implement a min heap, if you put all the elements in negative form the max element would be min in the actual dataset.
+- Other ways of doing this would be:
+  - creating a `greater<T>` as a custom comparision func
+  - or, `operator<` function
+
+![alt text](image-40.png)
+
+![alt text](image-41.png)
+
+![alt text](image-42.png)
+
+- We can also create sets with custom ordering by defining the `operator<` fn when defining the struct.
+
+![alt text](image-43.png)
+
+- In sets we can't directly jump from one element to another and if we try doing `it + 5` it will basically do `it++` 5 times.
+
+- So traversing in a set is of order n i.e. O(N). See for `distance(it1, it2)` it's order is O(it2 - it1)
+
+![alt text](image-44.png)
