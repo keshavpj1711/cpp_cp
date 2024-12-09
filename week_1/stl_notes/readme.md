@@ -82,3 +82,27 @@ STL is basically a helper library thing now we can implement every function like
 ![alt text](image-18.png)
 
 ![alt text](image-19.png)
+
+![alt text](image-20.png)
+
+![alt text](image-21.png)
+
+![alt text](image-22.png)
+
+![alt text](image-23.png)
+
+![alt text](image-24.png)
+
+- The problem in the above code is that the datatype of `a.size()` is unsigned int and when `a.size()` returns 0 subtracting something from unsigned results in a very large number if the the result was to be a negative number. Reason: check properties of unsigned int. 
+
+![alt text](image-25.png)
+
+![alt text](image-26.png)
+
+![alt text](image-27.png)
+
+![alt text](image-28.png)
+
+![alt text](image-29.png)
+
+![alt text](image-30.png)
