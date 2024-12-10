@@ -57,6 +57,16 @@ struct bag{
 
     return it -> second;
   }
+
+  int getFreqOfPreviousGreater(int x){
+    // That is basically the largest number smaller than x
+    auto it = mp.upper_bound(x);
+    if (it == mp.end()) {
+      return 0;
+    }
+    it--; // Since upperbound gives val > x and an element just before that will be the largest number smaller than x
+    return it -> second;
+  }
 };
 
 int main()
