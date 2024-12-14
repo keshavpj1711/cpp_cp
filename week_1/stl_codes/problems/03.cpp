@@ -5,6 +5,7 @@
 using namespace std;
 
 void Solve(){
+  // Time complexity of this is -> O(NlogN)
   int testCases;
   cin>>testCases;
 
@@ -45,3 +46,7 @@ int main()
 
   return 0;
 }
+
+// Comments:
+// This problem felt pretty easy it was all about distance = speed x time
+// And how we stored the values in a map and do the required calculations
